@@ -4,7 +4,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array, load_img
 
 # Memuat model yang sudah dilatih
-loaded_model = load_model('model.h5')
+loaded_model = load_model('model.h5', compile=False)
 
 # Fungsi untuk memprediksi kelas gambar
 def predict_image(image):
