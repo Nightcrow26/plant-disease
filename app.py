@@ -1,10 +1,7 @@
 import streamlit as st
-import tensorflow as tf
 import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array, load_img
-
-tf.keras.backend.clear_session()
 
 # Memuat model yang sudah dilatih
 loaded_model = load_model('model.h5', compile=False)
